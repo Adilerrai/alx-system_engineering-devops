@@ -1,7 +1,11 @@
 #!/usr/bin/env bash
-#documentation is importante 
-for file in $(ls *-*); do 
-	name="${file#*-}"
-	echo "$name"
+#terate through files in the current directory
+for file in *; do
+    # Check if the file is not hidden and has a dash in the name
+    if [[ ! $file == .* && $file == *-* ]]; then
+        # Use parameter expansion to extract the part after the first dash
+        name="${file#*-}"
+        echo "$name"
+    fi
 done
 
