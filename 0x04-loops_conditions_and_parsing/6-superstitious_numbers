@@ -6,11 +6,16 @@ while [ $i -le 20 ]
 do	
 	echo "$i" 
 	i=$(( i + 1))
-	if [ $i -eq 5 ]; then
-		echo "bad luck from China"
-	elif [ $i -eq 10 ]; then
-		echo "bad luck from Japan"
-	elif [ $i -eq  18 ]; then
-		echo "bad luck from Italy"
-	fi
+	case $i in
+	5) 
+	echo "bad luck from China"
+	;; 
+	10)
+	echo "bad luck from Japan"
+	;; 
+	18) 
+	echo "bad luck from Italy"
+	;;	
+	esac
+		
 done
