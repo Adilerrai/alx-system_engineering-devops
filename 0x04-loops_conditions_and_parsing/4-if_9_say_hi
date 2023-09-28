@@ -1,11 +1,12 @@
 #!/usr/bin/env bash
-#script below print the Best School ten time using while loop
+#this script is doing great
+
 i=1
-while [ $i -le 10  ]; do
-	if  [ $i -eq 9 ]; then
+while [ $i -le 10 ]
+do
+	echo "Best School"
+	i=$(( i + 1))
+	if [ $i -eq 10 ]; then 
 		echo "Hi"
-	else
-        	echo "Best School"
 	fi 
-	i=$(( i + 1 ))
-done 
+done
