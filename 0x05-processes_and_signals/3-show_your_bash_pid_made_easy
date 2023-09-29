@@ -1,5 +1,3 @@
 #!/usr/bin/env bash 
 #this is a  comment 
-for word in $(pidof bash); do
-	    echo "$word bash"
-done
+pgrep -l "bash"
