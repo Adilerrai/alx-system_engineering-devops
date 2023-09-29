@@ -1,0 +1,5 @@
+#!/usr/bin/env bash 
+#this script will print all the process with their information without TTY 
+
+ps -o user,pid,%cpu,%mem,vsz,rss,tty,stat,start,time,command
+
