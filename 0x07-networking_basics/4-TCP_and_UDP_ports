@@ -1,1 +1,6 @@
-#!/usr/bin/bash
+#!/usr/bin/env bash
+
+# Use netstat to list listening TCP and UDP sockets with PID and program 
+#!/usr/bin/env bash
+#Display the open sockets
+netstat -lp
