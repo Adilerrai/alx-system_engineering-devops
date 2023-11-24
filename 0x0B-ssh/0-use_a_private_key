@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#this a script to open my server 
+ssh -i ~/.ssh/school ubuntu@100.25.167.83
