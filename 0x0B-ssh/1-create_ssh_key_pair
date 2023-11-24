@@ -1,1 +1,3 @@
 #!/usr/bin/env bash
+#this file to creat a ssh key 
+ssh-keygen -t rsa -b 4096 -c -P 'betty' -f "$school"
