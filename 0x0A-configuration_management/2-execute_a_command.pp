@@ -1,4 +1,4 @@
 # This resource is to exec a command 
 exec {'killmenow':
-command => 'pkill',
+command => '/usr/bin/pkill',
 }
